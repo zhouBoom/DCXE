@@ -1,0 +1,12 @@
+<!--pages/pay/pay.wxml-->
+<view class="containerIndex">
+   <view class="choiceCard">
+        <image class="choiceImg" src="../../static/images/car.png"/>
+        <view class="detailTotal">
+            <text class="detailName">北汽新能源EU5</text><text class="detailMoney">￥50</text><text class="detailCi">/(次)试驾</text>
+        </view>
+        <input class="yhq" type="text" placeholder="请输入您的优惠券"/>
+        <button class="wxPay" bindtap="bespoke">微信支付</button>
+        <text class="payTip">免费约车券可关注“电小二公众号”获得</text>
+    </view>
+</view>

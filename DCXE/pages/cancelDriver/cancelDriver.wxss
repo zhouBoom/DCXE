@@ -1,0 +1,14 @@
+/* pages/cancelDriver/cancelDriver.wxss */
+.containerIndex{
+    text-align: center;
+}
+.cancelImg{
+    margin-top: 143rpx;
+    width: 148rpx;
+    height: 148rpx;
+}
+.cancelText{
+    margin-top: 77rpx;
+    font-size: 38rpx;
+    color: #3d7cf1;
+}

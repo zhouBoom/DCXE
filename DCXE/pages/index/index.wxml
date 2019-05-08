@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="containerIndex">
+  <view class="navigation">
+    <view class="lx" bindtap="brandList">
+    <text wx:if="{{brand=='品牌'}}" class="title {{brandExpert ? 'font-weight':''}}" selectable="false">{{brand}}</text>
+    <text wx:else class="titleActive {{brandExpert ? 'font-weight':''}}" selectable="false">{{brand}}</text>
+    <image class="" src="{{brandExpert ? '../../static/images/xiangshang.png':'../../static/images/xiangxia.png'}}"/>
+    </view>
+    <view class="lx" bindtap="carList">
+      <text wx:if="{{type=='车型'}}" class="title {{carExpert ? 'font-weight':''}}" selectable="false">{{type}}</text>
+      <text wx:else class="titleActive {{carExpert ? 'font-weight':''}}" selectable="false">{{type}}</text>
+      <image  class="" src="{{carExpert ? '../../static/images/xiangshang.png':'../../static/images/xiangxia.png'}}"/>
+    </view>
+    
+    <view class="lx" bindtap="totalList">
+      <text wx:if="{{total=='价格'}}" class="title {{totalExpert ? 'font-weight':''}}" selectable="false">{{total}}</text>
+      <text wx:else class="titleActive {{totalExpert ? 'font-weight':''}}" selectable="false">{{total}}</text>
+      <image class="" src="{{totalExpert ? '../../static/images/xiangshang.png':'../../static/images/xiangxia.png'}}"/>
+    </view>
+  </view>
+  <view class="{{totalExpert ? 'tipBlock':'tipNone'}}">  
+    <view class="tipCard">
+      <view class='choice {{num==0?"active":""}}' data-num='0' data-text='不限价格' data-apitext='' catchtap='changeOil'>不限价格</view>
+      <view class='choice {{num==1?"active":""}}' data-num='1' data-text='7万以下' data-apitext='0~7' catchtap='changeOil'>7万以下</view>
+      <view class='choice {{num==2?"active":""}}' data-num='2' data-text='7-15万' data-apitext='7~15' catchtap='changeOil'>7-15万</view>
+      <view class='choice {{num==3?"active":""}}' data-num='3' data-text='15-25万' data-apitext='15~25' catchtap='changeOil'>15-25万</view>
+      <view class='choice {{num==4?"active":""}}' data-num='4' data-text='25-50万' data-apitext='25~50' catchtap='changeOil'>25-50万</view>
+    </view>
+  </view>
+  <view class="{{carExpert ? 'tipBlock':'tipNone'}}">  
+    <view class="tipCard">
+      <view class='choice {{tipnum==0?"active":""}}' data-tipnum='0' data-text='全部车型' data-apitext='' catchtap='changeType' >全部车型</view>
+      <view class='choice {{tipnum==1?"active":""}}' data-tipnum='1' data-text='小微车' data-apitext='小微车' catchtap='changeType'>小微车</view>
+      <view class='choice {{tipnum==2?"active":""}}' data-tipnum='2' data-text='SUV' data-apitext='SUV' catchtap='changeType'>SUV</view>
+      <view class='choice {{tipnum==3?"active":""}}' data-tipnum='3' data-text='轿车' data-apitext='轿车' catchtap='changeType'>轿车</view>
+    </view>
+  </view>
+  <view class="{{brandExpert ? 'tipBlock':'tipNone'}}">  
+    <view class="tipCard">
+      <view class='choice {{carnum==0?"active":""}}' data-carnum='0' data-text='全部品牌' data-apitext='' catchtap='changeCar'>全部品牌</view>
+      <view class='choice {{carnum==1?"active":""}}' data-carnum='1' data-text='威马' data-apitext='威马' catchtap='changeCar'>威马</view>
+      <view class='choice {{carnum==2?"active":""}}' data-carnum='2' data-text='小鹏' data-apitext='小鹏' catchtap='changeCar'>小鹏</view>
+      <view class='choice {{carnum==3?"active":""}}' data-carnum='3' data-text='吉利' data-apitext='吉利' catchtap='changeCar'>吉利</view>
+      <view class='choice {{carnum==4?"active":""}}' data-carnum='4' data-text='比亚迪' data-apitext='比亚迪' catchtap='changeCar'>比亚迪</view>
+      <view class='choice {{carnum==5?"active":""}}' data-carnum='5' data-text='北汽' data-apitext='北汽' catchtap='changeCar'>北汽</view>
+      <view class='choice {{carnum==6?"active":""}}' data-carnum='6' data-text='合众' data-apitext='合众' catchtap='changeCar'>合众</view>
+    </view>
+  </view>
+  <scroll-view class="" scroll-x="false" scroll-y="true" upper-threshold="50" lower-threshold="50" 
+    scroll-with-animation="true" enable-back-to-top="true" >
+  <view class="card" wx:for="{{carList}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+    <image class="" src="https://liudada.top/{{item.image}}" data-src="https://liudada.top/{{item.image}}" bindtap='previewImg' lazy-load="true"/>
+    <text class="card_title" >{{item.brand}}{{item.model}}</text>
+    <text class="card_totle">{{item.bottom_price}}万-{{item.ceiling_price}}万</text>
+    <text class="card_js">续航{{item.mileage}}公里</text>
+    <button data-carid="{{item.id}}" data-carimg="{{item.image}}" class="blue" type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="choiceCar">
+      上门试用
+    </button>
+    <view class="divLine"></view>
+  </view>
+  </scroll-view>
+</view>
+

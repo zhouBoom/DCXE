@@ -1,0 +1,29 @@
+<!--pages/user/user.wxml-->
+<view class="containerIndex">
+    <view class="userMsg">
+        <open-data type="userAvatarUrl" class="userImg" id="userinfo"></open-data>
+        <open-data type="userNickName" class="nickName"  lang="zh_CN"></open-data>
+    </view>
+    <view class="userCard card1" bindtap="bespoke">
+        <image class="userCardIcon" src="../../static/images/yuyue.png"/>
+        <text> 我的预约</text>
+        <image class="yj" src="../../static/images/you.png"/>
+    </view>
+    <view class="userCard" bindtap="orderRecord">
+        <image class="userCardIcon" src="../../static/images/lishi.png"/>
+        <text > 预约历史</text>
+        <image class="yj" src="../../static/images/you.png"/>
+    </view>
+     <view class="userCard" bindtap="kf">
+        <image class="userCardIcon" src="../../static/images/dianhua.png"/>
+        <text> 客服小二</text>
+        <image class="yj" src="../../static/images/you.png"/>
+    </view>
+    <view class="userCard" bindtap="xy">
+        <image class="userCardIcon" src="../../static/images/dianche.png"/>
+        <text> 服务协议</text>
+        <image class="yj" src="../../static/images/you.png"/>
+    </view>
+</view>
+
+

@@ -1,0 +1,28 @@
+<!--pages/bespoke/bespoke.wxml-->
+<view wx:if="{{dataStatus}}" class="containerIndex">
+    <view class="bespokeStateCard">
+        <text >{{status}}</text>
+        <text >{{brand}}{{model}}</text>
+        <text bindtap = "calcelDriver">取消试驾</text>
+    </view>
+    <view class="orderDetail">
+        <image class="orderTimeImg" src="../../static/images/xuhang.png"/>
+        <image class="orderAddressImg" src="../../static/images/greyaddress.png"/>
+        <text class="orderTime">{{date}}   {{time}}</text>
+        <text class="orderAddress">{{address}}</text>
+        <image class="carImg" src="{{image}}"/>
+        <text class="cancelOderTip">注意：平台会对预约单进行审核，如审核未通过会提前通知您。</text>
+    </view>
+    <view class="carOwner">
+        <image class="carOwnerImg" src="{{head_portrait}}" />
+        <text class="carOwnerName" >
+         {{name}}   
+        </text>
+        <view bindtap="tel">
+            <image class="phoneImg" src="../../static/images/dianhua.png"/>
+            <text class="phoneName">
+            拨电话   
+            </text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/webView/webView.wxml-->
+<view class="containerIndex">
+   <web-view src="{{cars_link}}" bindmessage="" bindload="loadSucc"></web-view>
+</view>

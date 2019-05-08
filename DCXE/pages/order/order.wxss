@@ -1,0 +1,163 @@
+/* pages/order/order.wxss */
+.detailT{
+    width: 100%;
+    text-align: center;
+}
+.detailT > .detailImg{
+    width: 380rpx;
+    height: 317rpx;
+    margin-top: 27rpx;
+    margin-bottom: 20rpx;
+}
+.detailT > .detailTotal{
+    text-align: center;
+    margin-bottom: 39rpx;
+}
+.detailT > .detailTotal > .detailName{
+    font-size: 34rpx;
+    color: #000000;
+}
+.detailT > .detailTotal > .detailMoney{
+    font-size: 42rpx;
+    color: #f03535;
+    margin-left: 28rpx;
+    font-weight: bold;
+}
+.detailT > .detailTotal > .detailCi{
+    font-size: 30rpx;
+    color: #f03535;
+}
+.detailPrice{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 44rpx;
+}
+.detailPrice > .shoujia{
+    display: inline-block;
+    width: 29rpx;
+    height: 33rpx;
+}
+.detailPrice > .detailShoujia{
+    font-size: 28rpx;
+    color: #000000;
+    margin-left: 20rpx;
+}
+.detailPrice > .xuhang{
+    display: inline-block;
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: 54rpx;
+}
+.detailPrice > .detailXuhang{
+    font-size: 28rpx;
+    color: #000000;
+    margin-left: 20rpx;
+}
+.TestDriver{
+    border-top: 1rpx solid #f7f7f7;
+    border-bottom: 1rpx solid #f7f7f7;
+}
+.ziliao{
+    display: block;
+    margin: 34rpx 0 48rpx 47rpx;
+    font-size: 30rpx;
+    color: #000000;
+    font-weight: bold;
+}
+.TestDriver > .DriverFinsh{
+    margin-left: 47rpx;
+    margin-bottom: 37rpx;
+    line-height:50rpx;
+}
+.TestDriver > .DriverTime{
+    margin-left: 47rpx;
+    margin-bottom: 37rpx;
+    line-height:50rpx;
+}
+.driverQSD{
+    font-size: 28rpx;
+    color: #000000;
+}
+.drivermb{
+    font-size: 28rpx;
+    color: #666666;
+    float: right;
+    margin-right: 104rpx;
+}
+.yj{
+    width: 14rpx;
+    height: 20rpx;
+    float: right;
+    margin-top:14rpx;
+    margin-right:56rpx; 
+}
+.Owner{
+    position: relative;
+    width: 100%;
+    height: 260rpx;
+    border-top: 1rpx solid #f7f7f7;
+    border-bottom: 1rpx solid #f7f7f7;
+}
+.czMsg{
+    position: absolute;
+    font-size: 30rpx;
+    color: #000000;
+    top: 37rpx;
+    left: 47rpx;
+    font-weight: bold;
+}
+.OwnerImg{
+    position: absolute;
+    width: 105rpx;
+    height: 105rpx;
+    top: 106rpx;
+    left: 47rpx;
+    border-radius: 50%;
+}
+.OwnerName{
+    position: absolute;
+    left: 180rpx;
+    top: 100rpx;
+    font-size: 30rpx;
+    color: #000000;
+}
+.jieshao{
+    position: absolute;
+    font-size: 24rpx;
+    color: #666666;
+    left: 180rpx;
+    bottom: 40rpx;
+    height: 66rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-right: 30rpx;
+}
+.describe{
+    margin-left: 16rpx;
+    font-size: 24rpx;
+    color: #666666;
+    margin-right: 30rpx;
+}
+.bottom50{
+    margin-bottom: 15%;
+}
+.ljyy{
+    position: fixed;
+    background-color: #3a7bf1;
+    color: #ffffff;
+    font-weight: bold;
+    width: 90%;
+    left: 5%;
+    bottom: 2%; 
+    font-size: 36rpx;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    border-radius: .5em;
+}
+
+.pick{
+    float:right;
+}

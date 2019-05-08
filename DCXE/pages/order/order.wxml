@@ -1,0 +1,47 @@
+<!--pages/order/order.wxml-->
+<view class="containerIndex">
+    <view class="detailT">
+        <image class="detailImg" src="{{image}}" mode="aspectFit|aspectFill|widthFix" lazy-load="true" binderror="" bindload=""/>
+        <view class="detailTotal">
+            <text class="detailName">{{brand}}{{model}}</text><text class="detailMoney">￥{{trial_driving_fee}}元</text><text class="detailCi">/(次)试驾</text>
+        </view>
+        <view class="detailPrice">
+            <image class="shoujia" src="../../static/images/shoujia.png" />
+            <text class="detailShoujia">售价{{bottom_price}}-{{ceiling_price}}万</text>
+            <image class="xuhang" src="../../static/images/xuhang.png" />
+            <text class="detailXuhang">续航{{mileage}}公里</text>
+        </view>
+    </view>
+    <view class="TestDriver">
+        <text class="ziliao">预约内容</text>
+        <view class="DriverFinsh" bindtap="addSearch">
+            <text class="driverQSD">试驾起始地</text>
+            <image class="yj" src="../../static/images/you.png"/>
+            <text class="drivermb">{{keywords}}</text>
+        </view>
+        <view class="DriverTime">
+            <text class="driverQSD">试驾时间</text>
+           <picker class="pick" mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                <image class="yj" src="../../static/images/you.png"/>
+                <text class="drivermb">{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}</text>
+            </picker>
+            <!-- <image class="yj" src="../../static/images/you.png"/>
+            <text class="drivermb">3月31日 12:00-14:00</text> -->
+        </view>
+    </view>
+    <view class="Owner">
+        <text class="czMsg">车主信息</text>
+        <image class="OwnerImg" src="{{head_portrait}}"/>
+        <text class="OwnerName">{{name}}</text>
+        <text class="jieshao">{{introduce}}</text>
+    </view>
+    <view class="TestDriver bottom50">
+        <text class="ziliao">车型描述</text>
+        <view class="describe" bindtap="webView">
+           <image src="{{content}}" data-index="{{ index }}" bindload="imageLoad" style="width:{{ images[index].width }}rpx; height:{{ images[index].height }}rpx;"/>
+        </view>
+    </view>
+    <button class="ljyy blue" bindtap="login">
+        立即预约
+    </button>
+</view>

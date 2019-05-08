@@ -1,0 +1,128 @@
+/**index.wxss**/
+
+.navigation{
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
+.navigation > .lx{
+  /* margin: 0 7%; */
+  display: inline;
+}
+.navigation > .lx > .title{
+  display: inline-block;
+  color: #666666;
+  font-size: 28rpx;
+}
+.navigation > .lx >image{
+  display: inline-block;
+  margin-left:15rpx;
+  width: 12rpx;
+  height: 10rpx;
+}
+.card{
+  width:100%;
+  height:195rpx;
+  position: relative;
+  /* border-bottom: 1px solid #f7f7f7;
+  border-top: 1px solid #f7f7f7; */
+}
+.card > image{
+  position: absolute;
+  width: 208rpx;
+  height: 156rpx;
+  left: 22rpx;
+  top: 26rpx;
+}
+.card > .card_title{
+  position: absolute;
+  left: 270rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #000000;
+  top: 30rpx;
+}
+.card > .card_totle{
+  position: absolute;
+  left: 270rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #f03535;
+  top: 80rpx;
+}
+.card > .card_js{
+  position: absolute;
+  left: 270rpx;
+  font-size: 26rpx;
+  color: #666666;
+  bottom: 20rpx;
+}
+.card > button{
+  position: absolute;
+  color: #ffffff;
+  font-size: 22rpx;
+  right: 10%;
+  top: 50%;
+  margin-top: -25rpx;
+    border-radius: .5em;
+  /* width: 111rpx; */
+}
+
+.card > button.button-hover{
+  background-color: gray;
+}
+.tipCard{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.choice{
+  font-size: 22rpx;
+  color: #000000;
+  border: 1rpx solid #e0e3e3;
+  padding: 20rpx 30rpx;
+  text-align: center;
+  margin: 10rpx 0; 
+  width: 20%;
+}
+.zzc{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 20vh;
+  z-index: 2013;
+  width: 100%;
+  height: 80vh;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+  cursor: default;
+}
+.font-weight{
+  font-weight: bold;
+}
+.active{
+  border: 1rpx solid #3d7cf1;
+  color: #3d7cf1;
+  background-color: #ebf1fc;
+}
+.titleActive{
+  color: #3d7cf1;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.header{
+  position: fixed;
+  top: 0;
+}

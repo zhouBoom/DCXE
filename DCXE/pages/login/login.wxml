@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view class="containerIndex">
+    <view class="phoneNumTip">
+        请输入手机号
+    </view>
+    <view class="phoneNumInput">
+        <input class="" value="" type="number" placeholder="手机号" bindinput='getPhoneValue' maxlength="11" value="{{phone}}"/>
+        <button bindtap='getVerificationCode' wx-if="{{showCode}}" disabled="{{codeDisabled}}">{{codename}}</button>
+        <text wx:else class="getCodeTip">验证码已发送</text>
+    </view>
+    <view class="phoneNumTip">
+        请输入验证码
+    </view>
+    <view class="phoneNumInput">
+        <input class="" value="" type="number" placeholder="验证码" bindinput='getCodeValue' maxlength="4" value="{{code}}"/>
+        <text class="getCode">{{miao}}</text>
+    </view>
+    <!-- <text class="errorTip">验证码输入错误</text> -->
+    <button class="btn login" loading="{{loading}}" disabled="{{disabled}}" bindtap="wxPayPage">
+        确认
+    </button>
+</view>

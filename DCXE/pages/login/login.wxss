@@ -1,0 +1,49 @@
+/* pages/login/login.wxss */
+.phoneNumTip{
+    margin: 77rpx 0 67rpx 37rpx;
+    font-size: 30rpx;
+    color: #666666;
+}
+.phoneNumInput{
+    display: flex;
+    align-items: center;
+    margin-left: 37rpx;
+    margin-right: 41rpx;
+    height: 80rpx;
+    border-bottom: 1rpx solid #f7f7f7;
+}
+
+.phoneNumInput > input {
+    display: inline-block;
+    width: 70%;
+}
+.phoneNumInput > button {
+    display: inline-block;
+    margin-right: 72rpx;
+    font-size: 24rpx;
+    color: #ffffff;
+    background-color: #407ff3;
+    margin: 0;
+    margin-left:10rpx;
+}
+.phoneNumInput > .getCodeTip{
+    font-size: 28rpx;
+    color: #3879f0;
+}
+.phoneNumInput > .getCode{
+    font-size: 24rpx;
+    color: #666666;
+}
+.login{
+    margin: 57rpx 28rpx 0 28rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    background: #3a7bf1;
+}
+.errorTip{
+    font-size: 28rpx;
+    color: #f03535;
+    display: inline-block;
+    margin-top: 36rpx;
+    margin-left: 37rpx;
+}

@@ -1,0 +1,28 @@
+/* pages/orderRecord/orderRecord.wxss */
+.orderRecord{
+    width: 100%;
+    border-bottom: 1rpx solid #f7f7ff;
+    height: 86rpx;
+    line-height: 86rpx;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.orderRecord text:nth-child(1){
+    font-size: 28rpx;
+    color: #666666; 
+    margin-left: 20rpx;
+}
+.orderRecord text:nth-child(2){
+    font-size: 28rpx;
+    color: #85c12f; 
+}
+.orderRecord text:nth-child(3){
+    font-size: 28rpx;
+    color: #666666; 
+}
+.orderRecord text:nth-child(4){
+    font-size: 28rpx;
+    color: #3d7cf1; 
+    margin-right: 20rpx;
+}

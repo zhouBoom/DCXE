@@ -1,0 +1,40 @@
+<!--pages/choiceCar/choiceCar.wxml-->
+<view class="containerIndex">
+    <view class="choiceCard">
+        <image class="choiceImg" src="{{carImage}}"/>
+        <text class="choiceTitle" >
+            {{carBrand}}
+        </text>
+    </view>
+    <view class="mapBar">
+        <text class="city" bindtap="">{{cityName}}</text>
+        <image class="yj" src="../../static/images/xia.png"/>
+        <image class="location" src="../../static/images/blueaddress.png"/>
+        <text class="detailedAddress" bindtap="">{{addName}}</text>
+        <image class="yj2" src="../../static/images/xia.png"/>
+    </view>
+    <view class="addChoice" hidden="{{addExpert}}">
+        <view class="provinces">
+            <view class="">江苏省泰州市</view>
+        </view>
+        <view class="counties">
+            <view class="">海陵区</view>
+            <view class="">高港区</view>
+            <view class="">姜堰区</view>
+            <view class="">兴化市</view>
+            <view class="">靖江市</view>
+            <view class="">泰兴市</view>
+        </view>
+    </view>
+    <view class="mapCard" wx:for="{{carList}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+        <image class="car" src="https://liudada.top/{{item.image}}" mode="aspectFit|aspectFill|widthFix" lazy-load="true"/>
+        <text class="card_title" >{{item.name}}</text>
+        <text class="card_totle">{{item.trial_driving_fee}}元/次</text>
+        <text class="card_js">{{item.week}}</text>
+        <view class="addressCard">
+            <image class="greyaddress" src="../../static/images/greyaddress.png" />
+            <text class="address">{{item.city}}</text>
+        </view>
+        <text class="btn" data-lonlat="{{longitude}},{{latitude}}" data-city="{{cityName}}" data-id="{{item.id}}" bindtap="placeOrder">立即预约</text>
+    </view>
+</view>

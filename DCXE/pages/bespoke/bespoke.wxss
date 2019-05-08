@@ -1,0 +1,114 @@
+/* pages/bespoke/bespoke.wxss */
+.containerIndex{
+    background-color: #f7fbff;
+    height: 100vh;
+}
+.bespokeStateCard{
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    background-color: #ffffff;
+}
+.bespokeStateCard text:nth-child(1){
+    font-size: 28rpx;
+    color: #f03535;
+    margin-left: 26rpx;
+}
+.bespokeStateCard text:nth-child(2){
+    font-size: 28rpx;
+    color: #000000;
+    margin-left: 13rpx;
+}
+.bespokeStateCard text:nth-child(3){
+    font-size: 28rpx;
+    color: #85c12f;
+    float: right;
+    margin-right: 33rpx;
+}
+.orderDetail{
+    height: 200rpx;
+    width: 100%;
+    border-bottom: 1rpx solid #f7f7f7;
+    border-top: 1rpx solid #f7f7f7;
+    position: relative;
+    background-color: #ffffff;
+}
+.orderTimeImg{
+    position: absolute;
+    width: 22rpx;
+    height: 22rpx;
+    top: 34rpx;
+    left: 30rpx;
+    
+}
+.orderAddressImg{
+    position: absolute;
+    width: 16rpx;
+    height: 22rpx;
+    top: 91rpx;
+    left: 30rpx;
+}
+.orderTime{
+    position: absolute;
+    top: 34rpx;
+    left: 72rpx;
+    font-size: 24rpx;
+    color: #b8b8b8;
+}
+.orderAddress{
+    position: absolute;
+    top: 91rpx;
+    left: 72rpx;
+    font-size: 24rpx;
+    color: #b8b8b8;
+}
+.carImg{
+    position: absolute;
+    width: 168rpx;
+    height: 112rpx;
+    top: 24rpx;
+    right: 28rpx;
+}
+.cancelOderTip{
+    position: absolute;
+    font-size: 20rpx;
+    color: #f0c635;
+    left: 30rpx;
+    bottom: 25rpx;
+}
+.carOwner{
+    position: relative;
+    width: 100%;
+    height: 88rpx;
+    background-color: #ffffff;
+}
+.carOwnerImg{
+    position: absolute;
+    top: 50%;
+    margin-top: -29rpx;
+    width: 58rpx;
+    height: 58rpx;
+    left: 42rpx;
+}
+.carOwnerName{
+    position: absolute;
+    margin-top: -14rpx;
+    font-size: 28rpx;
+    color: #000000;
+    left: 134rpx;
+}
+.phoneImg{
+    position: absolute;
+    top: 50%;
+    margin-top: -14rpx;
+    width: 30rpx;
+    height: 28rpx;
+    right: 158rpx;
+}
+.phoneName{
+    position: absolute;
+    margin-top: -14rpx;
+    font-size: 28rpx;
+    color: #3d7cf1;
+    right: 51rpx;
+}

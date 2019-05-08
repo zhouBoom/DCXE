@@ -1,0 +1,5 @@
+<!--pages/cancelDriver/cancelDriver.wxml-->
+<view class="containerIndex">
+    <image class="cancelImg" src="../../static/images/chenggong.png" />
+    <view class="cancelText">取消成功</view>
+</view>
