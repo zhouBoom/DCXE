@@ -1,0 +1,51 @@
+/* pages/myddxq/myddxq.wxss */
+.touxiang {
+    border-radius: 50%;
+    width: 106rpx;
+    height: 106rpx;
+}
+.txbox {
+    text-align: center;
+    margin-top: 40rpx;
+}
+.mingzi {
+    font-size: 30rpx;
+}
+.ncbox {
+    text-align: center;
+    margin-top: 10rpx;
+}
+.sjkfsj {
+    width: 100%;
+    margin-top: 38rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.qiantubiao {
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: 32rpx;
+}
+.zizi1 {
+    font-size: 30rpx;
+    color: #585858;
+    margin-left: 30rpx;
+}
+.zizi11 {
+    font-size: 30rpx;
+    color: #656565;
+    float: right;
+    margin-right: 30rpx;
+}
+.sjkfsj2 {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.map {
+
+}
+.maps {
+    margin-top: 55rpx;
+    margin-left: 55rpx;
+}

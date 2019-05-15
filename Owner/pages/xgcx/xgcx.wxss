@@ -1,0 +1,29 @@
+/* pages/xgcx/xgcx.wxss */
+.zizi {
+    font-size: 30rpx;
+    margin-left: 44rpx;
+}
+.box {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.xuanze {
+    display: inline-block;
+    position: absolute;
+    right: 54rpx;
+    font-size: 30rpx;
+    color: #a4a4a4;
+}
+.but {
+    width: 100%;
+    margin-top: 135rpx;
+    text-align: center;
+}
+.butsss {
+    width: 521rpx;
+    background-color: #6792ba;
+    color: #fff;
+}

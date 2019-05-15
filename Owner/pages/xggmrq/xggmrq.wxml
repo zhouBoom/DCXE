@@ -1,0 +1,20 @@
+<!--pages/xggmrq/xggmrq.wxml-->
+<view>
+        <view class="box">
+            <text class="zizi">购买日期</text>
+            <picker
+                class="xuanze"
+                mode="date"
+                value="{{date}}"
+                bindchange="bindDateChange"
+            >
+                <view class="picker">
+                    {{datetishi}} {{date}}
+                </view>
+            </picker>
+        </view>
+        <view class="but">
+            <button class="butsss" bindtap="baocun">保存</button>
+        </view>
+    </view>
+

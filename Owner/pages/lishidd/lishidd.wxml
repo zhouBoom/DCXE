@@ -1,0 +1,15 @@
+<!--pages/lishidd/lishidd.wxml-->
+
+<view>
+    <view class="boxx" wx:for="{{ ddlist }}">
+        <text class="times">{{item.date}}</text>
+        <text class="zt1" wx:if="{{item.status == 1}}">已预约</text>
+        <text class="zt2" wx:if="{{item.status == 2}}">已取消</text>
+        <text class="zt3" wx:if="{{item.status == 3}}">已付款</text>
+        <text class="zt4" wx:if="{{item.status == 4}}">已接单</text>
+        <text class="zt5" wx:if="{{item.status == 5}}">已开始</text>
+        <text class="zt6" wx:if="{{item.status == 6}}">已完成</text>
+        <text class="cheche">{{item.brand}} {{item.model}}</text>
+        <text class="shijia">试驾服务</text>
+    </view>
+</view>

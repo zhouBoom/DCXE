@@ -1,0 +1,36 @@
+<view class="fa_box">
+    <view class="yonghubox">
+        <!-- <image class="touxiang" src="{{ images }}"></image>
+        <text class="yonghuname">{{ names }}</text> -->
+        <open-data type="userAvatarUrl" class="touxiang"></open-data>
+        <open-data type="userNickName" class="yonghuname"></open-data>
+    </view>
+    <view class="wodeyuyue" bindtap="goincome">
+        <image class="yuyueimg1" src="../../static/images/shouru@3x.png"></image>
+        <text class="yuyuetext1">我的收入</text>
+        <image class="yuyueimg2" src="../../static/images/you@3x.png"></image>
+    </view>
+    <view class="yuyuexian"></view>
+    <view class="yuyuelishi" bindtap="goxiugai">
+        <image class="lishiimg1" src="../../static/images/xinxi@3x.png"></image>
+        <text class="yuyuetext1">我的信息</text>
+        <image class="yuyueimg2" src="../../static/images/you@3x.png"></image>
+    </view>
+    <view class="xinxixian"></view>
+    <view class="yuyuelishi" bindtap="gojiedanls">
+        <image class="lishiimg1" src="../../static/images/jiedan@2x.png"></image>
+        <text class="yuyuetext1">接单历史</text>
+        <image class="yuyueimg2" src="../../static/images/you@3x.png"></image>
+    </view>
+    <view class="dianchexiaoer" bindtap="kf">
+        <image class="xiaoerimg1" src="../../static/images/dianche@3x.png"></image>
+        <text class="xiaoertext1">客服小二</text>
+        <image class="xiaoerimg2" src="../../static/images/you@3x.png"></image>
+    </view>
+    <view class="xinxixian"></view>
+    <view class="shezhi" bindtap="xy">
+        <image class="xiaoerimg1" src="../../static/images/shezhi.png"></image>
+        <text class="xiaoertext1">服务协议</text>
+        <image class="shezhiimg2" src="../../static/images/you@3x.png"></image>
+    </view>
+</view>

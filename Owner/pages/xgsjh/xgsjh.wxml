@@ -1,0 +1,20 @@
+<!--pages/xgsjh/xgsjh.wxml-->
+<view>
+        <view class="xms">
+            <text class="xh">*</text>
+            <text class="zizizi">手机号</text>
+            <input class="shouji" bindblur="shoujihao" value="{{shoujival}}" placeholder="输入您的手机号"></input>
+        </view>
+        <view class="xms">
+            <text class="xh">*</text>
+            <text class="zizizi">验证码</text>
+            <input class="yzmk" type="number" placeholder="点击输入验证码" bindinput='getCodeValue' maxlength="4" value="{{code}}"/>
+        </view>
+        <view class="querenbox">
+            <button class="yzbut" bindtap='getVerificationCode' wx-if="{{showCode}}" >{{codename}}</button>
+            <text wx:else class="miaos">{{miao}}</text>
+        </view>
+        <view class="but">
+            <button class="butsss" bindtap="baocun">保存</button>
+        </view>
+    </view>

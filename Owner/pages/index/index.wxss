@@ -1,0 +1,157 @@
+/**index.wxss**/
+.top {
+	width: 100%;
+	/* height: 56rpx;
+	line-height: 66rpx; */
+	/* background-color: red; */
+	margin-top: 10rpx;
+}
+.top_t1 {
+	color: #000000;
+	font-size: 30rpx;
+	float: left;
+	margin-left: 76rpx;
+}
+.top_t2 {
+	color: #000000;
+	font-size: 30rpx;
+	float: right;
+	margin-right: 76rpx;
+}
+.ddact1 {
+	font-size: 30rpx;
+	float: left;
+	margin-left: 76rpx;
+	color: #6791bb;
+}
+.ddact2 {
+	font-size: 30rpx;
+	float: right;
+	margin-right: 76rpx;
+	color: #6791bb;
+}
+.mid {
+	width: 100%;
+	text-align: center;
+}
+.mid_img {
+	width: 366rpx;
+	height: 286rpx;
+	margin-top: 10rpx;
+}
+.mid_xian {
+	display: inline-block;
+	width: 644rpx;
+	height: 1rpx;
+	background-color: #f7f7f7;
+	margin-left: 51rpx;
+}
+.cont_1 {
+	width: 647rpx;
+	border: 1rpx solid #EEE;
+	margin-left: 51rpx;
+	margin-top: 19rpx;
+	border-radius: 14rpx;
+	box-shadow: 0 0 30rpx 6rpx #F0FFFF;
+}
+.cont_1_xian {
+	display: inline-block;
+	width: 574rpx;
+	height: 1rpx;
+	background-color: #f7f7f7;
+	margin-left: 32rpx;
+	margin-bottom: 25rpx;
+}
+.cont_1_time {
+	width: 100%;
+	margin-top: 35rpx;
+	display: flex;
+	align-items: center;
+}
+.cont_1_time_img {
+	margin-left: 32rpx;
+	width: 17rpx;
+	height: 17rpx;
+}
+.cont_sj {
+	font-size: 30rpx;
+	color: #000000;
+	margin-left: 21rpx;
+}
+.cont_1_times {
+	font-size: 30rpx;
+	color: #666666;
+	margin-left: 166rpx;
+}
+.cont_1_qidian {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.cont_1_qidian_img {
+	margin-left: 34rpx;
+	width: 17rpx;
+	height: 17rpx;
+}
+.cont_1_qidians {
+	width: 310rpx;
+	font-size: 30rpx;
+	color: #666666;
+	margin-left: 166rpx;
+	display: block;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.cont1_man {
+	position: relative;
+}
+.mansimg {
+	width: 55rpx;
+	height: 55rpx;
+	border-radius: 50%;
+	margin-top: 50rpx;
+	margin-left: 34rpx;
+	margin-bottom: 14rpx;
+}
+.manstext {
+	font-size: 30rpx;
+	color: #000000;
+	margin-left: 11rpx;
+	position: absolute;
+	top: 56rpx;
+	left: 92rpx;
+}
+.jiedanbut1 {
+	background-color: #6791bb;
+	margin: 0;
+	padding: 0;
+	width: 129rpx;
+	height: 53rpx;
+	line-height: 53rpx;
+	font-size: 30rpx;
+	color: #fff;
+	position: absolute;
+	top: 56rpx;
+	right: 33rpx;
+}
+.jiedanbut2 {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	width: 159rpx;
+	height: 53rpx;
+	line-height: 53rpx;
+	font-size: 30rpx;
+	color: #6791bb;
+	border: #6791bb;
+	position: absolute;
+	top: 56rpx;
+	right: 33rpx;
+}
+.cw404 {
+	width: 100%;
+	text-align: center;
+	height: 300rpx;
+	line-height: 300rpx;
+}

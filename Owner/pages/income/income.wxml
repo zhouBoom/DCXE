@@ -1,0 +1,11 @@
+<!--pages/income/income.wxml-->
+<view>
+    <view class="shouruyue">
+        <image class="beijing1" src="../../static/images/beijing@3x.png"></image>
+        <text class="text1">当前账户余额（元）</text>
+        <text class="text2">{{ incomeyue }}</text>
+    </view>
+    <view class="tixian">
+        <view class="tixianbut">提现</view>   
+    </view>
+</view>

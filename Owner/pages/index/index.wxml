@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view>
+	<view class="fa_box" wx:if="{{ ddplay1 }}">
+		<view class="mid">
+			<image class="mid_img" src="../../static/images/car.png">
+			</image>
+		</view>
+		<text class="mid_xian"></text>
+		<view class="top">
+			<text class='{{ddact==1?"ddact1":"top_t1"}}' bindtap="goindex">待处理订单</text>
+			<text class='{{ddact==2?"ddact2":"top_t2"}}' bindtap="gomydd">我的订单</text>
+		</view>
+		<text class="mid_xian"></text>
+		<!-- 错误 -->
+		<view class="cw404" wx:if="{{cuowu404}}">
+			不好意思！电车小二迷路了 555！
+		</view>
+		<!-- 页面 -->
+		<view class="cont_1" wx:for="{{ dd_list1 }}">
+			<view class="cont_1_time">
+				<image class="cont_1_time_img" src="../../static/images/time1.png"></image>
+				<text class="cont_sj">时间</text>
+				<text class="cont_1_times">{{ item.date }}  {{ item.time }}</text>
+			</view>
+			<text class="cont_1_xian"></text>
+			<view class="cont_1_qidian">
+				<image class="cont_1_qidian_img" src="../../static/images/lvdian.png"></image>
+				<text class="cont_sj">地址</text>
+				<text class="cont_1_qidians">{{ item.address }}</text>
+			</view>
+			<view class="cont1_man">
+				<image class="mansimg" src='https://liudada.top{{item.image}}'></image>
+				<text class="manstext">{{ item.nick_name }}</text>
+				<button class="jiedanbut1" bindtap="jiedanbt" data-did="{{item.order_no}}">接 单</button>
+			</view>
+		</view>
+	</view>
+	<view class="fa_box" wx:if="{{ ddplay2 }}">
+	<view class="mid">
+		<image class="mid_img" src="../../static/images/car.png">
+		</image>
+	</view>
+	<text class="mid_xian"></text>
+	<view class="top">
+		<text class='{{ddact==1?"ddact1":"top_t1"}}' bindtap="goindex">待处理订单</text>
+		<text class='{{ddact==2?"ddact2":"top_t2"}}'>我的订单</text>
+	</view>
+	<text class="mid_xian"></text>
+	<view class="cont_1" wx:for="{{ dd_list2 }}">
+		<view class="cont_1_time">
+			<image class="cont_1_time_img" src="../../static/images/time1.png"></image>
+			<text class="cont_sj">时间</text>
+			<text class="cont_1_times">{{ item.date }}  {{ item.time }}</text>
+		</view>
+		<text class="cont_1_xian"></text>
+		<view class="cont_1_qidian">
+			<image class="cont_1_qidian_img" src="../../static/images/lvdian.png"></image>
+			<text class="cont_sj">地址</text>
+			<text class="cont_1_qidians">{{ item.address }}</text>
+		</view>
+		<view class="cont1_man">
+			<image class="mansimg" src='https://liudada.top{{item.image}}'></image>
+			<text class="manstext">{{ item.nick_name }}</text>
+			<button class="jiedanbut2" bindtap="fuwubt" data-did="{{item.order_no}}">开始服务</button>
+		</view>
+	</view>
+	</view>
+</view>
+
+

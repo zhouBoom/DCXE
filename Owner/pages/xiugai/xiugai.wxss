@@ -1,0 +1,28 @@
+/* pages/xiugai/xiugai.wxss */
+.xiangmu {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    /* background-color: red; */
+}
+.zi1 {
+    font-size: 30rpx;
+    color: black;
+    margin-left: 44rpx;
+}
+.zi11 {
+    font-size: 30rpx;
+    color: #a4a4a4;
+    margin-right: 40rpx;
+}
+.jian {
+    width: 14rpx;
+    height: 28rpx;
+    display: inline-block;
+    margin-right: 44rpx;
+}
+.youfudong {
+   display: inline-block;
+   position: absolute;
+   right: 1rpx;
+}

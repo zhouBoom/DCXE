@@ -1,0 +1,25 @@
+<!--pages/myddxq/myddxq.wxml-->
+
+<view>
+    <view class="txbox">
+        <image class="touxiang" src="../../static/images/manss.png"></image>
+    </view>
+    <view class="ncbox">
+        <text class="mingzi">{{name}}</text>
+    </view>
+    <view>
+        <view class="sjkfsj">
+            <image class="qiantubiao" src="../../static/images/time@2x.png"></image>
+            <text class="zizi1">试驾开放时间</text>
+            <text class="zizi11">{{date}} {{time}}</text>
+        </view>
+        <view class="sjkfsj2">
+            <image class="qiantubiao" src="../../static/images/address@2x.png"></image>
+            <text class="zizi1">试驾地点</text>
+            <text class="zizi11">{{sjdidian}}</text>
+        </view>
+    </view>
+    <view class="map">
+        <image class="maps" src="../../static/images/maps.png"></image>
+    </view>
+</view>

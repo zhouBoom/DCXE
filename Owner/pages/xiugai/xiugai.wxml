@@ -1,0 +1,60 @@
+<!--pages/xiugai/xiugai.wxml-->
+
+<view>
+    <view class="xiangmu">
+        <text class="zi1">车型</text>
+        <view class="youfudong" bindtap="goxgcx">
+            <text class="zi11">{{chexing}}</text>
+            <image class="jian" src="../../static/images/you@3x.png"></image>
+        </view>
+    </view>
+    <view class="xiangmu">
+        <text class="zi1">购买日期</text>
+        <view class="youfudong" bindtap="goxggmrq">
+            <text class="zi11">{{goumairiqi}}</text>
+            <image class="jian" src="../../static/images/you@3x.png"></image>
+        </view>
+    </view>
+    <view class="xiangmu">
+        <text class="zi1">车主姓名</text>
+        <view class="youfudong" >
+            <text class="zi11">{{chezhuname}}</text>
+            <!-- <image class="jian" src="../../static/images/you@3x.png"></image> -->
+        </view>
+    </view>
+    <view class="xiangmu">
+        <text class="zi1">证件信息</text>
+        <view class="youfudong">
+            <text class="zi11">{{zhengjian}}</text>
+            <!-- <image class="jian" src="../../static/images/you@3x.png"></image> -->
+        </view>
+    </view>
+    <view class="xiangmu">
+        <text class="zi1">城市</text>
+        <view class="youfudong" bindtap="goxgcs">
+            <text class="zi11">{{chengshi}}</text>
+            <image class="jian" src="../../static/images/you@3x.png"></image>
+        </view>
+    </view>
+    <view class="xiangmu">
+        <text class="zi1">密码</text>
+        <view class="youfudong" bindtap="goxgmm">
+            <text class="zi11">{{mima}}</text>
+            <image class="jian" src="../../static/images/you@3x.png"></image>
+        </view>
+    </view>
+    <view class="xiangmu">
+        <text class="zi1">手机号</text>
+        <view class="youfudong" bindtap="goxgsjh">
+            <text class="zi11">{{shouji}}</text>
+            <image class="jian" src="../../static/images/you@3x.png"></image>
+        </view>
+    </view>
+    <view class="xiangmu">
+        <text class="zi1">预约时间</text>
+        <view class="youfudong" bindtap="goxgyysj">
+            <text class="zi11">{{yuyuetime}}</text>
+            <image class="jian" src="../../static/images/you@3x.png"></image>
+        </view>
+    </view>
+</view>

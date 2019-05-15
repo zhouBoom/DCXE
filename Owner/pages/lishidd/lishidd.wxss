@@ -1,0 +1,57 @@
+/* pages/lishidd/lishidd.wxss */
+.times {
+    font-size: 30rpx;
+    margin-left: 33rpx;
+}
+.boxx {
+    height: 80rpx;
+    line-height: 80rpx;
+    /* background-color: red; */
+    position: relative;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.zt1 {
+    font-size: 30rpx;
+    margin-left: 33rpx;
+    color: #FFC1C1;
+}
+.zt2 {
+    font-size: 30rpx;
+    margin-left: 33rpx;
+    color: #FF6347;
+}
+.zt3 {
+    font-size: 30rpx;
+    margin-left: 33rpx;
+    color: #A2CD5A;
+}
+.zt4 {
+    font-size: 30rpx;
+    margin-left: 33rpx;
+    color: #B0C4DE;
+}
+.zt5 {
+    font-size: 30rpx;
+    margin-left: 33rpx;
+    color: #66CD00;
+}
+.zt6 {
+    font-size: 30rpx;
+    margin-left: 33rpx;
+    color: #00CD00;
+}
+.cheche {
+    display: inline-block;
+    font-size: 30rpx;
+    margin-left: 33rpx;
+    width: 220rpx;
+    /* background-color: red; */
+    text-align: center;
+}
+.shijia {
+    font-size: 30rpx;
+    color: #1C86EE;
+    position: absolute;
+    right: 33rpx;
+}

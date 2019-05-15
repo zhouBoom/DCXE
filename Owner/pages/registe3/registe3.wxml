@@ -1,0 +1,44 @@
+
+<view>
+        <view class="tops">
+            <image class="xianshi"  src="../../static/images/tops11.png"></image>
+            <image class="xian1" src="../../static/images/topsxian2.png"></image>
+    
+            <image class="xianshi"  src="../../static/images/tops22.png"></image>
+            <image class="xian1" src="../../static/images/topsxian2.png"></image>
+    
+            <image class="xianshi"  src="../../static/images/tops3.png"></image>
+            <image class="xian1" src="../../static/images/topsxian1.png"></image>
+    
+            <image class="xianshi"  src="../../static/images/tops44.png"></image>
+            <image class="xian1" src="../../static/images/topsxian2.png"></image>
+    
+            <image class="xianshi"  src="../../static/images/tops55.png"></image>
+        </view>
+        <view class="topz">
+            <text class="se2">基本信息</text>
+            <text class="se2">拍照上传</text>
+            <text class="se1">手机验证</text>
+            <text class="se2">设置密码</text>
+            <text class="se2">确认预约</text>
+        </view>
+        <view class="xms">
+            <text class="xh">*</text>
+            <text class="zizizi">手机号</text>
+            <input class="shouji" bindblur="shoujihao" value="{{shoujival}}" placeholder="输入您的手机号"></input>
+        </view>
+        <view class="xms">
+            <text class="xh">*</text>
+            <text class="zizizi">验证码</text>
+            <input class="yzmk" type="number" placeholder="点击输入验证码" bindinput='getCodeValue' maxlength="4" value="{{code}}"/>
+        </view>
+        <view class="querenbox">
+            <text wx-if="{{showCode}}" class="miaos">{{miao}}</text>
+            <button class="yzbut" bindtap='getVerificationCode' disabled="{{yzmfs}}">{{codename}}</button>
+        </view>
+
+        <!-- 按钮 -->
+        <view class="but">
+            <button class="butsss" bindtap="gonext">下一步</button>
+        </view>
+    </view>

@@ -1,0 +1,71 @@
+<!--pages/registe4/registe4.wxml-->
+<view>
+        <view class="tops">
+            <image class="xianshi"  src="../../static/images/tops11.png"></image>
+            <image class="xian1" src="../../static/images/topsxian2.png"></image>
+    
+            <image class="xianshi"  src="../../static/images/tops22.png"></image>
+            <image class="xian1" src="../../static/images/topsxian2.png"></image>
+    
+            <image class="xianshi"  src="../../static/images/tops33.png"></image>
+            <image class="xian1" src="../../static/images/topsxian2.png"></image>
+    
+            <image class="xianshi"  src="../../static/images/tops44.png"></image>
+            <image class="xian1" src="../../static/images/topsxian2.png"></image>
+    
+            <image class="xianshi"  src="../../static/images/tops5.png"></image>
+        </view>
+        <view class="topz">
+            <text class="se2">基本信息</text>
+            <text class="se2">拍照上传</text>
+            <text class="se2">手机验证</text>
+            <text class="se2">设置密码</text>
+            <text class="se1">确认预约</text>
+        </view>
+
+        <view>
+            <text class="qingzi">请选择一周内可提供试驾服务的时间</text>
+        </view>
+        <view>
+            <!-- 表头 -->
+            <view class="rl_top">
+                <text class="rl_tops"></text>
+                <text class="rl_tops" wx:for="{{qitian}}">{{item}}</text>
+            </view>
+            <!-- 日历表格 -->
+            <view class="rl_gg">
+                <!-- 时间竖行 -->
+                <view class="shijianhang">
+                    <text class="timesss1" wx:for="{{shijian}}">{{item}}</text>
+                </view>
+                <!-- 选择竖行 -->
+                <view class="shijianhang">
+                    <text class='{{rilicss_1[index]==0?"rilicss0":"rilicss1"}}' wx:for="{{shijian}}" bindtap="djrili1" wx:for-index="index" data-index="{{index}}"></text>
+                </view>
+                <view class="shijianhang">
+                    <text class='{{rilicss_2[index]==0?"rilicss0":"rilicss1"}}' wx:for="{{shijian}}" bindtap="djrili2" wx:for-index="index" data-index="{{index}}"></text>
+                </view>
+                <view class="shijianhang">
+                    <text class='{{rilicss_3[index]==0?"rilicss0":"rilicss1"}}' wx:for="{{shijian}}" bindtap="djrili3" wx:for-index="index" data-index="{{index}}"></text>
+                </view>
+                <view class="shijianhang">
+                    <text class='{{rilicss_4[index]==0?"rilicss0":"rilicss1"}}' wx:for="{{shijian}}" bindtap="djrili4" wx:for-index="index" data-index="{{index}}"></text>
+                </view>
+                <view class="shijianhang">
+                    <text class='{{rilicss_5[index]==0?"rilicss0":"rilicss1"}}' wx:for="{{shijian}}" bindtap="djrili5" wx:for-index="index" data-index="{{index}}"></text>
+                </view>
+                <view class="shijianhang">
+                    <text class='{{rilicss_6[index]==0?"rilicss0":"rilicss1"}}' wx:for="{{shijian}}" bindtap="djrili6" wx:for-index="index" data-index="{{index}}"></text>
+                </view>
+                <view class="shijianhang">
+                    <text class='{{rilicss_7[index]==0?"rilicss0":"rilicss1"}}' wx:for="{{shijian}}" bindtap="djrili7" wx:for-index="index" data-index="{{index}}"></text>
+                </view>
+            </view>
+        </view>
+
+        <!-- 按钮 -->
+        <view class="but">
+            <button class="butsss" bindtap="gonext">提交注册</button>
+        </view>
+    </view>
+

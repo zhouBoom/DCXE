@@ -1,0 +1,116 @@
+.fa_box {
+    background-color: #f7fbff;
+    height: 100vh;
+}
+/* 用户信息 */
+.yonghubox {
+    display: flex;
+    height: 184rpx;
+    line-height: 184rpx;
+    background-color: #fff;
+    margin-bottom: 16rpx;
+}
+.touxiang {
+    width: 130rpx;
+    height: 130rpx;
+    margin-left: 38rpx;
+    margin-top: 27rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.yonghuname {
+    margin-left: 60rpx;
+}
+/* 我的预约 */
+.wodeyuyue {
+    /* background-color: red; */
+    display: flex;
+    height: 97rpx;
+    line-height: 97rpx;
+    width: 100%;
+    background-color: #fff;
+}
+.yuyueimg1 {
+    width: 41rpx;
+    height: 41rpx;
+    margin-left: 33rpx;
+    margin-right: 45rpx;
+    margin-top: 30rpx;
+}
+.yuyuetext1 {
+    font-size: 32rpx;
+    color: #000;
+}
+.yuyueimg2 {
+    width: 18rpx;
+    height: 30rpx;
+    margin-left: 450rpx;
+    margin-top: 33rpx;
+}
+/* 线 */
+.yuyuexian {
+    width: 644rpx;
+    height: 1rpx;
+    background-color: #f7f7f7;
+    margin-left: 33rpx;
+}
+.xinxixian {
+    background-color: #f7f7f7;
+    width: 644rpx;
+    height: 2rpx;
+    margin-left: 33rpx;
+}
+/* 历史预约 */
+.yuyuelishi {
+    display: flex;
+    height: 97rpx;
+    line-height: 97rpx;
+    width: 100%;
+    background-color: #fff;
+}
+.lishiimg1 {
+    width: 41rpx;
+    height: 41rpx;
+    margin-left: 33rpx;
+    margin-right: 45rpx;
+    margin-top: 30rpx;
+}
+/* 电车小二 */
+.dianchexiaoer {
+    display: flex;
+    height: 97rpx;
+    line-height: 97rpx;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 16rpx;
+}
+.xiaoerimg1 {
+    width: 41rpx;
+    height: 41rpx;
+    margin-left: 35rpx;
+    margin-right: 43rpx;
+    margin-top: 30rpx;
+}
+.xiaoertext1 {
+    font-size: 32rpx;
+    color: #000;
+}
+.xiaoerimg2 {
+    width: 18rpx;
+    height: 30rpx;
+    margin-left: 450rpx;
+    margin-top: 33rpx;
+}
+.shezhi {
+    display: flex;
+    height: 97rpx;
+    line-height: 97rpx;
+    width: 100%;
+    background-color: #fff;
+}
+.shezhiimg2 {
+    width: 18rpx;
+    height: 30rpx;
+    margin-left: 450rpx;
+    margin-top: 33rpx;
+}

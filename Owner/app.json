@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/wxlogin/wxlogin",
+    "pages/index/index",
+    "pages/myddxq/myddxq",
+    "pages/registe/registe",
+    "pages/registe2/registe2",
+    "pages/registe3/registe3",
+    "pages/registe4/registe4",
+    "pages/registe5/registe5",
+    "pages/pers/pers",
+    "pages/lishidd/lishidd",
+    "pages/xiugai/xiugai",
+    "pages/xgyysj/xgyysj",
+    "pages/xgsjh/xgsjh",
+    "pages/xgmm/xgmm",
+    "pages/xggmrq/xggmrq",
+    "pages/xgcs/xgcs",
+    "pages/xgcx/xgcx",
+    "pages/income/income",
+    "pages/xy/xy"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#4883f4",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "static/tabs/home-active.png",
+        "iconPath": "static/tabs/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "static/tabs/orders-active.png",
+        "iconPath": "static/tabs/orders.png",
+        "pagePath": "pages/pers/pers",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

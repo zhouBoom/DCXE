@@ -1,0 +1,86 @@
+/* pages/registe4/registe4.wxss */
+
+.xianshi {
+    display: inline-block;
+    width: 78rpx;
+    height: 78rpx;
+}
+.xian1 {
+    display: inline-block;
+    width: 78rpx;
+    height: 8rpx;
+    margin-top: 35rpx;
+}
+.tops {
+    display: flex;
+    text-align: center;
+    padding-left: 25rpx;
+    margin-top: 45rpx;
+}
+.topz {
+    margin-top: 10rpx;
+    margin-bottom: 50rpx;
+    width: 100%;
+}
+.se1 {
+    display: inline-block;
+    font-size: 24rpx;
+    color: #3d7cf1;
+    width: 20%;
+    text-align: center;
+}
+.se2 {
+    display: inline-block;
+    font-size: 24rpx;
+    color: #a4a4a4;
+    width: 20%;
+    text-align: center;
+}
+.xms {
+    position: relative;
+    display: flex;
+    height: 92rpx;
+    width: 100%;
+    border-bottom: 1px solid #f7faff;
+    /* background-color: pink; */
+}
+.xh {
+    color: red;
+    display: inline-block;
+    margin-top: 25rpx;
+    margin-left: 46rpx;
+}
+.zizizi {
+    font-size: 30rpx;
+    color: #383838;
+    display: inline-block;
+    height: 85rpx;
+    line-height: 85rpx;
+    margin-left: 12rpx;
+}
+.shouji {
+    /* background-color:red; */
+    margin-top: 18rpx;
+    position: absolute;
+    right: 88rpx;
+    text-align: right;
+    font-size: 30rpx;
+}
+.but {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 300rpx;
+}
+.butsss {
+    width: 521rpx;
+    background-color: #6792ba;
+    color: #fff;
+}
+.yanj {
+    width: 40rpx;
+    height: 30rpx;
+    position: absolute;
+    right: 30rpx;
+    top: 30rpx;
+}

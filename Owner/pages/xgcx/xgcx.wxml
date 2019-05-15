@@ -1,0 +1,14 @@
+<!--pages/xgcx/xgcx.wxml-->
+<view>
+    <view class="box">
+        <text class="zizi">车型</text>
+        <picker class="xuanze" mode="selector" bindchange="chexingcc" value="{{index}}" range="{{chexing}}">
+            <view>
+                {{chexingval}}
+            </view>
+        </picker>
+    </view>
+    <view class="but">
+        <button class="butsss" bindtap="baocun">保存</button>
+    </view>
+</view>

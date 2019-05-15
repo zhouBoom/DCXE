@@ -1,0 +1,80 @@
+<!--pages/registe/registe.wxml-->
+<view>
+    <view class="tops">
+        <image class="xianshi"  src="../../static/images/tops1.png"></image>
+        <image class="xian1" src="../../static/images/topsxian1.png"></image>
+
+        <image class="xianshi"  src="../../static/images/tops22.png"></image>
+        <image class="xian1" src="../../static/images/topsxian2.png"></image>
+
+        <image class="xianshi"  src="../../static/images/tops33.png"></image>
+        <image class="xian1" src="../../static/images/topsxian2.png"></image>
+
+        <image class="xianshi"  src="../../static/images/tops44.png"></image>
+        <image class="xian1" src="../../static/images/topsxian2.png"></image>
+
+        <image class="xianshi"  src="../../static/images/tops55.png"></image>
+    </view>
+    <view class="topz">
+        <text class="se1">基本信息</text>
+        <text class="se2">拍照上传</text>
+        <text class="se2">手机验证</text>
+        <text class="se2">设置密码</text>
+        <text class="se2">确认预约</text>
+    </view>
+    <view class="xms">
+        <text class="xh">*</text>
+        <text class="zizizi">车型</text>
+        <!-- <input class="shuru" placeholder="输入您的车型" bindblur="chexingcc"></input> -->
+        <picker mode="selector" bindchange="chexingcc" value="{{index}}" range="{{chexing}}">
+            <view>
+                {{chexingval}}
+            </view>
+        </picker>
+    </view>
+    <view class="xms">
+        <text class="xh">*</text>
+        <text class="zizizi">车辆牌照</text>
+        <input class="shuru" placeholder="输入您的车辆牌照" bindblur="clpaizhao" maxlength="7"></input>
+    </view>
+    <view class="xms">
+        <text class="xh">*</text>
+        <text class="zizizi">购买日期</text>
+        <picker
+            mode="date"
+            value="{{date}}"
+            bindchange="bindDateChange"
+        >
+            <view class="picker">
+                {{datetishi}} {{date}}
+            </view>
+        </picker>
+    </view>
+    <view class="xms">
+        <text class="xh">*</text>
+        <text class="zizizi">车主姓名</text>
+        <input class="shuru" placeholder="输入您的车主姓名" bindblur="namecc"></input>
+    </view>
+    <view class="xms">
+        <text class="xh">*</text>
+        <text class="zizizi">身份证号码</text>
+        <input class="shuru" value="{{shenval}}" placeholder="输入您的身份证号码" bindblur="shenfencc"></input>
+    </view>
+    <view class="xms">
+        <text class="xh">*</text>
+        <text class="zizizi">省市区</text>
+        <picker
+            mode="region"
+            bindchange="bindRegionChange"
+            value="{{shi}}"
+            custom-item="{{customItem}}"
+        >
+            <view class="picker">
+                {{shitishi}} {{shi[0]}} {{shi[1]}} {{shi[2]}}
+            </view>
+        </picker>
+    </view>
+    <view class="but">
+        <button class="butsss" bindtap="gonext">下一步</button>
+    </view>
+</view>

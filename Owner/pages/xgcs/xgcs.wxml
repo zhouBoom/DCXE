@@ -1,0 +1,20 @@
+<!--pages/xgcs/xgcs.wxml-->
+<view>
+        <view class="box">
+            <text class="zizi">城市</text>
+            <picker
+                class="xuanze"
+                mode="region"
+                bindchange="bindRegionChange"
+                value="{{shi}}"
+                custom-item="{{customItem}}"
+            >
+            <view class="picker">
+                {{shitishi}} {{shi[0]}} {{shi[1]}} {{shi[2]}}
+            </view>
+        </picker>
+        </view>
+        <view class="but">
+            <button class="butsss" bindtap="baocun">保存</button>
+        </view>
+    </view>

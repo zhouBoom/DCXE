@@ -1,0 +1,18 @@
+<!--pages/xgmm/xgmm.wxml-->
+<view>
+        <view class="box">
+            <text class="zizi">原密码</text>
+            <input class="xuanze" type="password" bindblur="mimacc1" value="{{mimaval}}" maxlength="6" placeholder="输入6位交易密码"></input>
+        </view>
+        <view class="box">
+            <text class="zizi">新密码</text>
+            <input class="xuanze" type="password" bindblur="mimacc1" value="{{mimaval}}" maxlength="6" placeholder="输入6位交易密码"></input>
+        </view>
+        <view class="box">
+            <text class="zizi">再次新密码</text>
+            <input class="xuanze" type="password" bindblur="mimacc1" value="{{mimaval}}" maxlength="6" placeholder="输入6位交易密码"></input>
+        </view>
+        <view class="but">
+            <button class="butsss" bindtap="baocun">保存</button>
+        </view>
+    </view>
